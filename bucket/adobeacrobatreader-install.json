@@ -1,9 +1,9 @@
 {
-    "version": "19.021.20058",
+    "version": "24.004.20220",
     "description": "Not only view, but print, sign, and annotate PDFs with the free Adobe Acrobat Reader DC.",
     "homepage": "https://acrobat.adobe.com/us/en/acrobat/pdf-reader.html",
-    "url": "http://ardownload.adobe.com/pub/adobe/reader/win/AcrobatDC/1902120058/AcroRdrDC1902120058_en_US.exe#/setup.exe",
-    "hash": "6bd68fea89cd6994715fe769717cc269fee78429fc12430e1a93a1cf7bb64b81",
+    "url": "https://ardownload2.adobe.com/pub/adobe/reader/win/AcrobatDC/2400420220/AcroRdrDC2400420220_de_DE.exe#/setup.exe",
+    "hash": "16a12f908a98c980b218ddd5c52f90042e25fbc0e79b6d338b4da8534b8ffa9b",
     "installer": {
         "script": "Invoke-ExternalCommand \"$dir\\setup.exe\" -ArgumentList @('/sAll', '/rs', '/msi', '/qn', '/norestart', 'EULA_ACCEPT=YES') -RunAs | Out-Null"
     },
@@ -23,6 +23,6 @@
         "re": "<title>([\\d.]+)"
     },
     "autoupdate": {
-        "url": "http://ardownload.adobe.com/pub/adobe/reader/win/AcrobatDC/$dirtyVersion/AcroRdrDC$dirtyVersion_en_US.exe#/setup.exe"
+        "url": "http://ardownload.adobe.com/pub/adobe/reader/win/AcrobatDC/$dirtyVersion/AcroRdrDC$dirtyVersion_de_DE.exe#/setup.exe"
     }
 }
